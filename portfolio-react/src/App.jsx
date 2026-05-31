@@ -431,7 +431,7 @@ export default function App() {
       {/* ─── CONTACT ─── */}
       <section className="contact section container" id="contact" aria-label="Contact">
         <h2 className="t-section reveal">Get In Touch</h2>
-        <p className="section-subtitle reveal t-body">Have a project in mind or want to collaborate? Drop me a message.</p>
+        <p className="section-subtitle reveal t-body">Open to new opportunities in Data Engineering. Let's connect!</p>
 
         <div className="contact__cards reveal">
           <div className="contact__card">
