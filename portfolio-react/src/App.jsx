@@ -433,61 +433,35 @@ export default function App() {
         <h2 className="t-section reveal">Get In Touch</h2>
         <p className="section-subtitle reveal t-body">Have a project in mind or want to collaborate? Drop me a message.</p>
 
-        <div className="contact__grid reveal">
-          {/* Contact Info */}
-          <div className="contact__info">
-            <div className="contact__card">
-              <span className="material-symbols-outlined contact__icon">mail</span>
-              <div>
-                <p className="t-label" style={{ marginBottom: 4 }}>Primary Email</p>
-                <a className="contact__link" href="mailto:muskanapril2002@gmail.com">muskanapril2002@gmail.com</a>
-              </div>
-            </div>
-            <div className="contact__card">
-              <span className="material-symbols-outlined contact__icon">mail</span>
-              <div>
-                <p className="t-label" style={{ marginBottom: 4 }}>Secondary Email</p>
-                <a className="contact__link" href="mailto:muskanapril27@gmail.com">muskanapril27@gmail.com</a>
-              </div>
-            </div>
-            <div className="contact__card">
-              <span className="material-symbols-outlined contact__icon">link</span>
-              <div>
-                <p className="t-label" style={{ marginBottom: 4 }}>LinkedIn</p>
-                <a className="contact__link" href="https://www.linkedin.com/in/muskan-khan-82a04b241/" target="_blank" rel="noopener noreferrer">muskan-khan</a>
-              </div>
-            </div>
-            <div className="contact__card">
-              <span className="material-symbols-outlined contact__icon">code</span>
-              <div>
-                <p className="t-label" style={{ marginBottom: 4 }}>GitHub</p>
-                <a className="contact__link" href="https://github.com/MUSKANKHAN7806" target="_blank" rel="noopener noreferrer">MUSKANKHAN7806</a>
-              </div>
+        <div className="contact__cards reveal">
+          <div className="contact__card">
+            <span className="material-symbols-outlined contact__icon">mail</span>
+            <div>
+              <p className="t-label" style={{ marginBottom: 4 }}>Primary Email</p>
+              <a className="contact__link" href="mailto:muskanapril2002@gmail.com">muskanapril2002@gmail.com</a>
             </div>
           </div>
-
-          {/* Contact Form */}
-          <form className="contact__form" action="https://formsubmit.co/muskanapril2002@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_subject" value="Portfolio Contact — New Message" />
-            <div className="contact__field">
-              <label className="t-label" htmlFor="contact-name">Your Name</label>
-              <input id="contact-name" name="name" type="text" required placeholder="John Doe" />
+          <div className="contact__card">
+            <span className="material-symbols-outlined contact__icon">mail</span>
+            <div>
+              <p className="t-label" style={{ marginBottom: 4 }}>Secondary Email</p>
+              <a className="contact__link" href="mailto:muskanapril27@gmail.com">muskanapril27@gmail.com</a>
             </div>
-            <div className="contact__field">
-              <label className="t-label" htmlFor="contact-email">Your Email</label>
-              <input id="contact-email" name="email" type="email" required placeholder="john@example.com" />
+          </div>
+          <div className="contact__card">
+            <span className="material-symbols-outlined contact__icon">link</span>
+            <div>
+              <p className="t-label" style={{ marginBottom: 4 }}>LinkedIn</p>
+              <a className="contact__link" href="https://www.linkedin.com/in/muskan-khan-82a04b241/" target="_blank" rel="noopener noreferrer">muskan-khan</a>
             </div>
-            <div className="contact__field">
-              <label className="t-label" htmlFor="contact-message">Message</label>
-              <textarea id="contact-message" name="message" rows="5" required placeholder="Tell me about your project..." />
+          </div>
+          <div className="contact__card">
+            <span className="material-symbols-outlined contact__icon">code</span>
+            <div>
+              <p className="t-label" style={{ marginBottom: 4 }}>GitHub</p>
+              <a className="contact__link" href="https://github.com/MUSKANKHAN7806" target="_blank" rel="noopener noreferrer">MUSKANKHAN7806</a>
             </div>
-            <button className="btn btn-primary contact__submit" type="submit">
-              <span className="material-symbols-outlined" style={{ fontSize: 18, marginRight: 8 }}>send</span>
-              SEND MESSAGE
-            </button>
-          </form>
+          </div>
         </div>
       </section>
 

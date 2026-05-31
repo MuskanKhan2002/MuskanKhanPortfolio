@@ -311,7 +311,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
    CONTACT SECTION
    ============================================ */
 .contact .section-subtitle { text-align:center; color:var(--text-secondary); max-width:520px; margin:0 auto 48px; }
-.contact__grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+.contact__cards { display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:700px; margin:0 auto; }
 .contact__info { display:flex; flex-direction:column; gap:16px; }
 .contact__card { display:flex; align-items:center; gap:16px; padding:20px 24px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); transition:border-color var(--transition-base),background var(--transition-base); }
 .contact__card:hover { border-color:var(--border-hover); background:var(--bg-card-hover); }
@@ -319,16 +319,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .contact__link { color:var(--accent-cyan); font-size:14px; transition:color var(--transition-base); }
 .contact__link:hover { color:var(--accent-cyan-dim); }
 
-.contact__form { display:flex; flex-direction:column; gap:20px; padding:32px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg,16px); }
-.contact__field { display:flex; flex-direction:column; gap:6px; }
-.contact__field label { color:var(--text-secondary); font-size:12px; letter-spacing:0.06em; text-transform:uppercase; }
-.contact__field input,
-.contact__field textarea { background:rgba(255,255,255,0.04); border:1px solid var(--border); border-radius:var(--radius-sm); padding:14px 16px; color:var(--text-primary); font-family:inherit; font-size:15px; transition:border-color var(--transition-base),box-shadow var(--transition-base); resize:vertical; }
-.contact__field input::placeholder,
-.contact__field textarea::placeholder { color:var(--text-muted); }
-.contact__field input:focus,
-.contact__field textarea:focus { outline:none; border-color:var(--accent-blue); box-shadow:0 0 0 3px var(--glow-blue); }
-.contact__submit { align-self:flex-start; display:inline-flex; align-items:center; }
 
 /* ============================================
    SCROLL REVEAL
@@ -359,7 +349,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   .timeline__content,.timeline__item--right .timeline__content { width:100%; padding:0; text-align:left; }
   .timeline__item--right .timeline__chips { justify-content:flex-start; }
   .timeline__dot { left:7px; top:8px; width:12px; height:12px; }
-  .achievements-grid,.projects-grid,.certs-grid,.skills-container,.contact__grid { grid-template-columns:1fr; }
+  .achievements-grid,.projects-grid,.certs-grid,.skills-container,.contact__cards { grid-template-columns:1fr; }
   .hero { min-height:auto; padding-top:120px; padding-bottom:32px; }
   .hero__split { flex-direction:column-reverse; gap:40px; }
   .hero__photo-wrapper { width:240px; height:300px; margin:0 auto; }
